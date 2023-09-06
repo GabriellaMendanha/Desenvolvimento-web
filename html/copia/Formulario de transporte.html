@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://127.0.0.1:5500/formsTransporte.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de transporte</title>
+</head>
+<body style="color: rgb(185, 14, 120);"> 
+    <header>
+        <h1>Formulario de transporte</h1>
+    </header>
+    <article>
+        <!--inicio do formulario com a tag <form>-->
+            <!--atributo action refere-se ao destino do formulario-->
+        <form action="mailto:%20gabriellamendanha2@gmail.com" method="post" id="fcontato" oninput="resul.value" =parseint(valor01.value)+parseint(valor02.value)"="">
+            <fieldset>
+                <langend>indentificação:</langend>
+                <br>
+            <!--label e o rotulo do input-->
+            <label for="tNome">Nome</label>
+            <!--input canpo para digitacao -->
+            <input type="text" size="50" name="Nome" id="tNome" required="required">
+            <br><br>
+                <p>Você mora:</p>
+                <!--input para selecionar dentre as opcoes-->
+                <input type="radio" name="tipo" id="cid" volue="c">
+                <label for="city">Cidade</label><br>
+                <input type="radio" name="tipo" id="inter" volue="I">
+                <label for="downtown">Inteiro</label>
+            </fieldset>
+
+                <br><br>
+            <fieldset>
+            <legend>informacao extra</legend>
+                <p>Qual meio de transporte você usa:</p>
+                <fieldset>
+                <!--imput para selecionar multiplas opcoes-->
+                <input type="checkbox" id="transporte1" name="transporte1" value="Bike">
+                <label for="transporte1">bicicleta</label>
+                <input type="checkbox" id="transporte2" name="transporte2" value="car">
+                <label for="transporte2">Carro</label>
+                <br>
+                <input type="checkbox" id="transporte3" name="transporte3" value="metro">
+
+                <label for="transporte3">Metrô</label><br>
+                <input type="checkbox" id="transporte4" name="transporte4" value="Bus">
+                 
+                <label for="transporte4">Ônibus</label><br><br>
+                <label for="time">Selecione seu time:</label> 
+ <select id="time" name="time"> 
+    <option value="cruzeiro">Cruzeiro</option> 
+    <option value="sao_paulo">São Paulo</option> 
+    <option value="corinthians">Corinthians</option> 
+    <option value="gremio">Grêmio</option> 
+    <option value="goiás">Goiás</option> 
+    <option value="santos">Santos</option> 
+ </select><br><br> 
+ <label for="cCid">Escolha a sua Cidade na lista:</label>  
+ <input outocomplete="on" list="cidade" name="tcid" id="cCid" placeholder="Sua cidade" <datalist="">  
+    <option value="São Paulo"></option> 
+ <option value="Campinas"></option> 
+ <option value="Santos"></option> 
+ <option value="Santo André"></option> 
+ <option value="Osasco"></option> 
+  
+</fieldset>
+<br>
+<fieldset>
+    <legend>Exemplo range e output:</legend>
+    
+ 0
+ <input type="range" name="valor01" id="valor01">
+  100 +
+  <input type="number" name="valor02" id="valor02 " value="50">
+   =
+  <output name="result" for="valor01 valoe02"></output>
+</fieldset>
+  <br>
+ <p>sugestoes,elogios e criticas:</p>
+ <textarea name="message" cols="30" rows="10" required="" placeholder="deixe aqui a sua mensagem!">
+</textarea>
+
+
+<br><br>
+<!--input gera botao de volume para defenir seu nome -->
+<imput type="submit" volue="Enviar" <="" form=""> 
+ </imput></fieldset></form></article> 
+ <br><br><hr>
+ <footer> 
+Para uso exclusivo do Instituto da Oportunidade Social ® www.ios.org.br 
+
+                <br><br>
+                <!--input gera botao e volui para definir seu nome-->
+                <input type="submit" volume="enviar">
+            
+        
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</footer></body></html>

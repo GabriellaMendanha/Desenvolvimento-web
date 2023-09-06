@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://127.0.0.1:5500/forms/atividade%20118%20.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="pt-br">
+    <meta name="" content="width=device-width, initial-scale=1.0">
+    <title>Forms em htmlt</title>
+</head>
+<body>
+      
+         <header> 
+         <h1>Exemplo de formulário no HTML</h1> 
+         </header> 
+         <article> 
+         <form action="http://127.0.0.1:5500/forms/atividade%20118%20.html#"> 
+         <label for="cNome">Nome:</label><br> 
+         <input type="text" size="50" name="tNome" id="cNome" required="require
+        d"> 
+         <br><br> 
+         <p>Você mora:</p> 
+         <input type="radio" name="tipo" id="cid" value="C"> 
+         <label for="cid">Cidade</label><br> 
+         <input type="radio" name="tipo" id="inter" value="I"> 
+         <label for="inter">Interior</label><br> 
+         <br><br> 
+         <p>Qual meio de transporte você usa?</p> 
+         <input type="checkbox" id="transporte1" name="transporte1" value="Bi
+        ke"> 
+         <label for="transporte1"> Bicicleta</label><br> 
+         <input type="checkbox" id="transporte2" name="transporte2" value="Ca
+        r"> 
+         <label for="transporte2"> Carro</label><br> 
+         <input type="checkbox" id="transporte3" name="transporte3" value="Me
+        tro"> 
+         <label for="transporte3"> Metrô</label><br> 
+         <input type="checkbox" id="transporte4" name="transporte4" value="Bu
+        s"> 
+         <label for="transporte4"> Ônibus</label> <br><br> 
+         <label for="time">Selecione seu time:</label> 
+         <select id="time" name="time"> 
+         <option value="nautico">Nautico</option> 
+         <option value="sao_paulo">São Paulo</option> 
+         <option value="corinthians">Corinthians</option> 
+         <option value="gremio">Grêmio</option> 
+         <option value="goiás">Goiás</option> 
+         <option value="santa Cruz">Santa Cruz</option> 
+         </select><br><br> 
+         <label for="cCid">Escolha a sua Cidade na lista:</label> 
+         <input autocomplete="on" list="cidade" name="tCid" id="cCid" placeho="" lder="Sua Cidade"> 
+         <datalist id="cidade">
+            <option value="São Paulo"></option> 
+ <option value="Recife"></option> 
+ <option value="Olinda"></option> 
+ <option value="Santo André"></option> 
+ <option value="Osasco"></option> 
+ </datalist> 
+ <br><br> 
+ <input type="submit" value="Enviar"> 
+ </form> 
+ </article> 
+ <footer> 
+ <small>Instituto da Oportunidade Social</small> 
+ </footer> 
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
